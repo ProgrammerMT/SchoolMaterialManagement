@@ -16,7 +16,7 @@ $user_role = isset($_SESSION['role']) ? $_SESSION['role'] : '';
             <li><a href="admin_dashboard.php">Админ Панел</a></li>
             <li><a href="manage_requests.php">Заявки</a></li>
         <?php elseif ($user_role == 'user'): ?>
-            <li><a href="user_dashboard.php">Моята Дашборд</a></li>
+            <li><a href="user_management.php">Моята Дашборд</a></li>
             <li><a href="create_request.php">Създай Заявка</a></li>
         <?php endif; ?>
         <?php if (isset($_SESSION['user_id'])): ?>
